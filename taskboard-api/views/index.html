@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Taskboard</title>
+    <link rel="stylesheet" href="app.css" type="text/css" />
+    <script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous">
+        </script>
+  </head>
+  <body>
+    
+    <!--Used for testing during development for API-->
+    <section class="form">
+      <form id="new-task-form" action="#">
+        <label for="name">Task Name:</label>
+        <input type="text" id="form-name" placeholder="Task name" required />
+        <br />
+        <label for="description">Task Description:</label>
+        <textarea id="form-description" placeholder="Task description" form="new-task-form"></textarea>
+        <br />
+        <label for="deadline">Task Deadline:</label>
+        <input type="date" id="form-deadline" />
+        <br />
+        <button type="submit">Add Task</button>
+      </form>
+    </section>
+    
+    <ul id="task-output">
+    </ul>
+    
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>

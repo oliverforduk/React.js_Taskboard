@@ -1,0 +1,43 @@
+.container {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.task-col {
+  width: 33.33%;
+}
+
+.task-holder {
+  margin: 0.5%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 2%;
+}
+
+.task-holder .title {
+  font-size: 2em;
+  margin: 5px;
+}
+
+.task-holder .title-info {
+  margin: 0px 8px;
+  color: #0077c0;
+}
+
+.task-holder .title-info span {
+  margin-left: 0.2em;
+}
+
+@media only screen and (max-width: 900px) {
+  .task-col {
+    width: 50%;
+  }
+  .full-col {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 680px) {
+  .task-col {
+    width: 100%;
+  }
+}

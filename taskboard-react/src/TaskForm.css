@@ -1,0 +1,72 @@
+#task-form-holder {
+  padding: 1%;
+  padding-bottom: 0;
+}
+
+#task-form-holder input[type=text] {
+  width: 85%;
+  margin: 0px 2.5% 4px 0px;
+  padding: 4px 8px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+#task-form-holder input[type=text]:focus {
+  border: 1px solid #0077c0;
+}
+
+#task-form-holder button {
+  width: 12.5%;
+  padding: 4px 8px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: #0077c0;
+  font-weight: bold;
+  transition-duration: 0.3s
+}
+#task-form-holder button:hover {
+  background-color: #004790;
+}
+
+#task-form-holder textarea {
+  width: 100%;
+  margin-bottom: 4px;
+  resize: none;
+  padding: 4px 8px;
+  border: 1px solid grey;
+  border-radius: 4px;
+}
+#task-form-holder textarea:focus {
+  border: 1px solid #0077c0;
+}
+
+#task-form-holder .back-link {
+    text-align: center;
+    font-size: 0.8em;
+    color: #0077c0;
+    padding-top: 2px;
+    text-decoration: underline;
+}
+#task-form-holder span:hover{
+  color: #004790;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 900px) {
+  #task-form-holder input[type=text] {
+    width: 80%;
+    margin-right: 2.5%;
+  }
+  #task-form-holder button {
+    width: 17.5%;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #task-form-holder input[type=text] {
+    width: 80%;
+    margin-right: 0;
+  }
+  #task-form-holder button {
+    width: 20%;
+  }
+}

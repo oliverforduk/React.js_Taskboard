@@ -1,0 +1,237 @@
+/*All purpose*/
+  .align-right {
+    text-align: right;
+  }
+  .align-center {
+    text-align: center;
+  }
+  
+/*Task box*/
+  .task {
+    position: relative;
+    padding: 2%;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: #FFF;
+    
+    border-left: solid #c5d5d6 1px;
+    border-right: solid #c5d5d6 1px;
+    border-bottom: solid #c5d5d6 1px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+  }
+  .task:hover {
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+/*Top Bar*/
+  .top-bar {
+    width: 100%;
+    height: 8px;
+    margin-top: 2%;
+  }
+  .open .top-bar {
+    background-color: #C72C1C;
+  }
+  .prog .top-bar {
+    background-color: #F39C12;
+  }
+  .com .top-bar {
+    background-color: #008c31;
+  }
+  
+/*Edit Options*/
+  .options {
+    position: absolute;
+    right: 2%;
+    top: 4%;
+  }
+  
+  .options-wrapper:hover .dot-holder {
+    display: none;
+  }
+  
+  .options-wrapper:hover .options-holder {
+    display: block;
+  }
+  
+  /*Options dots*/
+  .dot-holder {
+    width: 33px;
+    height: 11px;
+    background-color: #d5e5e6;
+    border-radius: 15%;
+  }
+
+  .edit-dot {
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    margin: 0 1px;
+    display: inline-block;
+    background-color: #0077c0;
+  }
+  
+  /*Full options*/
+  .options-holder {
+    display: none;
+    text-align: left;
+    background-color: #d5e5e6;
+    border-radius: 5%;
+  }
+  .options-holder .edit-dot {
+    background-color: #004790;
+  }
+  
+  .option-lis {
+    margin: 0;
+    padding: 1px 4px;
+    font-size: 1.1em;
+    list-style: none;
+    color: #0077c0;
+  }
+  .option-lis li:hover {
+    color: #004790;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  
+  /*Set to visable while being used within edit-form*/
+  .edit-form .options-holder {
+    display: block;
+  }
+  
+  
+  
+/*Task title*/
+  .task .task-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+/*Status Buttons (set all to hide by default)*/
+  .open-btns, .prog-btns, .com-btns {
+    display: none;
+  }
+  
+  /*Open-btns styling (show open-btns when inside .open task-holder & set triangle 1 colour)*/
+  .open .open-btns {
+    display: block;
+  }
+  .open-btns .triangle-1 {
+    border-right: solid 12px #004790;
+    border-bottom: solid 12px transparent;
+    border-top: solid 12px transparent;
+  }
+  .open-btns .triangle-1:hover {
+    cursor: default;
+  }
+  
+  /*Prog-btns styling (show prog-btns when inside .prog task-holder)*/
+  .prog .prog-btns {
+    display: block;
+  }
+  
+  /*Com-btns styling (show com-btns when inside .com task-holder & set triangle 2 colour)*/
+  .com .com-btns {
+    display: block;
+  }
+  .com-btns .triangle-2 {
+    border-left: solid 12px #004790;
+    border-bottom: solid 12px transparent;
+    border-top: solid 12px transparent;
+  }
+  .com .triangle-2:hover {
+    cursor: default;
+  }
+  
+/*Status trangles*/
+  .status-btns {
+    text-align: right;
+  }
+  .triangle {
+    display: inline-block;
+    margin: 0 1px;
+    vertical-align: middle;
+    transition-duration: 0.3s;
+  }
+  .triangle-1 {
+    width: 12px;
+    height: 24px;
+    border-right: solid 12px #0077c0;
+    border-bottom: solid 12px transparent;
+    border-top: solid 12px transparent;
+  }
+  .triangle-1:hover {
+    border-right: solid 12px #004790;
+    border-bottom: solid 12px transparent;
+    border-top: solid 12px transparent;
+    cursor: pointer;
+  }
+  .seperator {
+    height: 32px;
+    width: 3px;
+    border-bottom: solid 32px #004790;
+  }
+  .triangle-2 {
+    width: 12px;
+    height: 24px;
+    border-left: solid 12px #0077c0;
+    border-bottom: solid 12px transparent;
+    border-top: solid 12px transparent;
+  }
+  .triangle-2:hover {
+    border-left: solid 12px #004790;
+    border-bottom: solid 12px transparent;
+    border-top: solid 12px transparent;
+    cursor: pointer;
+  }
+  
+/*Edit form styling*/
+  .section-title {
+    text-align: center;
+    font-size: 0.8em;
+    color: #0077c0;
+    padding: 2px;
+  }
+  
+  #edit-task-form input[type=text] {
+    width: 65%;
+    margin-bottom: 4px;
+    padding: 4px 8px;
+    border: 1px solid grey;
+    border-radius: 4px;
+  }
+  #edit-task-form input[type=text]:focus {
+    border: 1px solid #0077c0;
+  }
+  
+  #edit-task-form textarea {
+    width: 100%;
+    margin-bottom: 4px;
+    resize: none;
+    padding: 4px 8px;
+    border: 1px solid grey;
+    border-radius: 4px;
+  }
+  #edit-task-form textarea:focus {
+    border: 1px solid #0077c0;
+  }
+  
+  #edit-task-form input[type=radio] {
+    margin: 0px 10px 10px;
+  }
+  
+  #edit-task-form button {
+    border: 0;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #22A7F0;
+    font-weight: bold;
+    transition-duration: 0.3s;
+  }
+  #edit-task-form button:hover {
+    background-color: #0287d0;
+  }
+
